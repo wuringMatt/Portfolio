@@ -57,7 +57,7 @@
         gap: 10px;
     }
 
-    .links img{
+    .links img, .links a{
         width: 32px;
         height: 32px;
     }
