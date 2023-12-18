@@ -1,19 +1,21 @@
 <script>
     import planningSystem from "$lib/img/planningSystem.png"
+    import Page from "./+page.svelte";
 
     const projects = [
         {
             name: "Planning System",
-            discription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugiat.",
+            discription: "Simple planning system for an ironing service, to plan in employees.",
             img: planningSystem,
+            link: "https://github.com/Sint-Lucas/proeve-van-bekwaamheid-i-MattWuring",
             status: [
                 {
                     name: "Svelte",
-                    color: "0, 0, 0"
+                    color: "255, 80, 0"
                 },
                 {
                     name: "W.i.P",
-                    color: "0, 0, 0"
+                    color: "0,150,0"
                 },
             ]
         },
@@ -21,46 +23,22 @@
             name: "Project 2",
             discription: "This is project number 2",
             img: "",
-            status: [
-                {
-                    name: "Svelte",
-                    color: "0, 0, 0"
-                },
-                {
-                    name: "WiP",
-                    color: "0, 0, 0"
-                },
-            ]
+            link: "",
+            status: []
         },
         {
             name: "Project 3",
             discription: "This is project number 3",
             img: "",
-            status: [
-                {
-                    name: "Svelte",
-                    color: "0, 0, 0"
-                },
-                {
-                    name: "WiP",
-                    color: "0, 0, 0"
-                },
-            ]
+            link: "",
+            status: []
         },
         {
             name: "Project 4",
             discription: "This is project number 4",
             img: "",
-            status: [
-                {
-                    name: "Svelte",
-                    color: "0, 0, 0"
-                },
-                {
-                    name: "WiP",
-                    color: "0, 0, 0"
-                },
-            ]
+            link: "",
+            status: []
         }
     ]
 </script>
@@ -69,7 +47,7 @@
     <h2>Projects</h2>
     <div class="grid">
         {#each projects as project}
-            <div class="gridItem">
+            <a class="gridItem" href="{project.link}" target="_blank">
                 <img src="{project.img}" alt="">
                 <div class="bottom">
                     <div class="title">
@@ -82,7 +60,7 @@
                     </div>
                     <p>{project.discription}</p>
                 </div>
-            </div>
+            </a>
         {/each}
     </div>
 </div>
@@ -111,6 +89,7 @@
         display: grid;
         grid-template-columns: 1fr;
         overflow: auto;
+        text-decoration: none;
     }
 
     .grid .gridItem img {
@@ -146,7 +125,6 @@
 
     .grid .gridItem .status li{
         padding: 5px 10px 5px 10px;
-        background-color: rgb(182, 83, 17);
         border-radius: 15px;
     }
 </style>

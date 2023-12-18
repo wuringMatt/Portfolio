@@ -1,6 +1,18 @@
 <div class="introduction">
     <h2>About me</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur quam eos aspernatur vel nisi quaerat dicta, aliquam omnis. Perspiciatis accusamus tempora vitae natus doloremque tenetur commodi explicabo atque blanditiis quaerat deserunt ab aspernatur perferendis adipisci sit, vel earum error eaque repudiandae harum a ad? Ab voluptatibus cum consequatur quos nobis autem, expedita sapiente neque voluptates molestias ad illo commodi, quia esse animi sed. Labore exercitationem vel iste optio veritatis debitis, dicta atque necessitatibus quis perspiciatis modi quasi repudiandae commodi, possimus eligendi maiores adipisci? Doloribus consequatur culpa repellendus iste, voluptatibus voluptatem animi aliquam similique a exercitationem non illo eum ex?</p>
+    <div class="context">
+        <p>
+            Hey there, I'm Matt Wuring, a 19-year-old software development enthusiast calling Eindhoven, The Netherlands, home. 
+            Currently diving into my fourth year of studies, I'm all about coding and problem-solving. 
+            From Javascript and HTML to CSS, Svelte, and Vue I've got the tech side covered. 
+            What sets me apart? Well, I've got a knack for seeing the bigger picture, decent communication 
+            skills, and I'm all about thinking ahead. Right now, I'm on the lookout for an internship to 
+            put my skills to the test and learn even more in the real-world tech trenches. 
+            So, if you're in need of someone with a mix of hard skills and a proactive mindset, 
+            hit me up I'm ready to dive in! 🚀
+        </p><br>
+        <p>Also, im not great at writing introductions so this one has been sponsored by chatGPT 😉</p>
+    </div>
 </div>
 
 <style scoped>
@@ -12,7 +24,7 @@
         padding-left: 15px;
     }
 
-    .introduction p{
+    .introduction .context{
         line-height: 150%;
         border: 1px solid rgb(36, 36, 49);
         padding: 10px 15px 10px 15px;
