@@ -57,7 +57,7 @@
 
 <style scoped>
     .cookie{
-        position: absolute;
+        position: fixed;
         bottom: 15px;
         right: 15px;
         width: 500px;
