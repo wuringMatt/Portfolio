@@ -2,6 +2,7 @@
     import Introduction from "./introduction.svelte";
     import Warning from "./warning.svelte";
     import Projects from "./projects.svelte";
+    import Cookie from "./cookie.svelte";
 
     import logo from "$lib/img/Logo.svg";
 
@@ -9,6 +10,8 @@
     import linkedIn from "$lib/img/linkedin.png";
     import email from "$lib/img/mail.png";
 </script>
+
+<Cookie/>
 
 <div class="nav">
     <img src="{logo}" alt="">

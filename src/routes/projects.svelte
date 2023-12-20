@@ -7,7 +7,7 @@
             name: "Planning System",
             discription: "Simple planning system for an ironing service, to plan in employees.",
             img: planningSystem,
-            link: "https://github.com/Sint-Lucas/proeve-van-bekwaamheid-i-MattWuring",
+            link: "https://github.com/wuringMatt/planningSystem",
             status: [
                 {
                     name: "Svelte",
